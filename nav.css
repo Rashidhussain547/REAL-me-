@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+.logo{
+    font-size: 40pt;
+    color: yellow;
+    font-weight: bold;
+    padding-left: 40px;
+    letter-spacing: 0.5cm;
+}
+.navigation{
+    background-color: DarkBlue;
+    height: 80px;
+    width: 100%;
+}
+.navigation ul{
+    float: right;
+}
+.navigation ul li{
+    display: inline-block;
+    margin: 30px 10px;
+}
+.navigation ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+.change:hover{
+    background-color: white;
+    color: darkblue;
+    padding: 5px 5px 5px 5px;
+    transition: .5s;
+}
+.bars{
+    float: right;
+    color: white;
+    font-size: 30px;
+    display: inline-flex;
+    margin-right: 10px;
+    line-height: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.slides{
+    width: 100%;
+    height: 100vh;
+    animation-name: wall;
+    animation-duration: 60s;
+    position: fixed;
+}
+@keyframes wall{
+    0%,100%{
+        background-image: url("w1.jpg");
+        background-size: 100% 90vh;
+        background-repeat: no-repeat;
+    }
+    20%{
+        background-image: url("w2.jpg");
+        background-size: 100% 90vh;
+        background-repeat: no-repeat;
+    }
+    30%{
+        background-image: url("w3.jpg");
+        background-size: 100% 90vh;
+        background-repeat: no-repeat;
+    }
+    40%{
+        background-image: url("w4.jpg");
+        background-size: 100% 90vh;
+        background-repeat: no-repeat;
+    }
+    60%{
+        background-image: url("w5.jpg");
+        background-size: 100% 90vh;
+        background-repeat: no-repeat;
+    }
+    80%{
+        background-image: url("w6.jpg");
+        background-size: 100% 90vh;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url("w7.jpg");
+        background-size: 100% 90vh;
+        background-repeat: no-repeat;
+    }
+
+}
